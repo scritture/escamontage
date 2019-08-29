@@ -1,0 +1,9 @@
+.jumbotron {
+    color: rgb(228, 206, 83);
+    background-image: url("/immagini/castello.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    height: 50vh;
+
+  }

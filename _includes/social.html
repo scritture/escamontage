@@ -1,0 +1,91 @@
+{%- assign social = site.minima.social_links -%}
+
+
+    <div class="row row-grid align-items-center my-md">
+
+      <div class="col-lg-6 text-lg-center btn-wrapper">
+
+        {%- if social.twitter -%}
+        <a target="_blank" href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" 
+        class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" 
+        data-toggle="tooltip" 
+        data-original-title="{{ social.twitter | escape }}">
+        <i class="fa fa-twitter-square"></i>
+        </a>
+        {%- endif -%}
+
+        {%- if social.facebook -%}
+              <a target="_blank" href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" 
+              class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" 
+              data-toggle="tooltip" 
+              data-original-title="{{ social.facebook | escape }}">
+              <i class="fa fa-facebook-square"></i>
+              </a>
+        {%- endif -%}
+        {%- if social.dribbble -%}
+        <a href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" title="{{ social.dribbble | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg></a></li>
+        <a target="_blank" href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" 
+        class="btn btn-neutral btn-icon-only btn-dribbble btn-round btn-lg" 
+        data-toggle="tooltip" 
+        data-original-title="{{ social.dribbble | escape }}">
+        <i class="fa fa-dribbble-square"></i>
+        </a>
+        
+        {%- endif -%}
+  
+        {%- if social.github -%}
+      
+        <a target="_blank" href="https://github.com/{{ social.github | cgi_escape | escape }}" 
+        class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" 
+        data-toggle="tooltip" 
+        data-original-title="{{ social.github | escape }}">
+        <i class="fa fa-github-square"></i>
+        </a>
+        {%- endif -%}
+        {%- if social.flickr -%}
+
+        <li>
+            <a target="_blank" href="https://www.flickr.com/photos/{{ social.flickr | cgi_escape | escape }}" 
+            class="btn btn-neutral btn-icon-only btn-flickr btn-round btn-lg" 
+            data-toggle="tooltip" 
+            data-original-title="{{ social.flickr | escape }}">
+            <i class="fa fa-flickr-square"></i>
+            </a>
+      </li>
+        {%- endif -%}
+
+        {%- if social.instagram -%}
+        <a href="https://www.instagram.com/{{ social.instagram | cgi_escape | escape }}" title="{{ social.instagram | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+  
+        {%- if social.linkedin -%}
+        <a href="https://www.linkedin.com/in/{{ social.linkedin | cgi_escape | escape }}" title="{{ social.linkedin | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+        
+        {%- if social.pinterest -%}
+        <a href="https://www.pinterest.com/{{ social.pinterest | cgi_escape | escape }}" title="{{ social.pinterest | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#pinterest' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+        
+        {%- for mst in social.mastodon -%}{%- if mst.username and mst.instance -%}<a rel="me" href="https://{{ mst.instance | cgi_escape | escape}}/@{{mst.username}}" title="{{ mst.username | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg></a>
+        {%- endif -%}{%- endfor -%}
+        
+         
+        {%- if social.youtube -%}<a href="https://www.youtube.com/{{ social.youtube | cgi_escape | escape }}" title="{{ social.youtube | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+        
+        {%- if social.youtube_channel -%}<a href="https://www.youtube.com/channel/{{ social.youtube_channel | cgi_escape | escape }}" title="{{ social.youtube_channel_name | escape | default: 'YouTube' }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+        
+        {%- if social.telegram -%}<a href="https://t.me/{{ social.telegram | cgi_escape | escape }}" title="{{ social.telegram | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#telegram' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+        
+        {%- if social.microdotblog -%}<a rel="me" href="https://micro.blog/{{ social.microdotblog | cgi_escape | escape }}" title="{{ social.microdotblog | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#microdotblog' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+        
+        {%- if social.rss -%}
+        <a href="{{ 'feed.xml' | relative_url }}" title="{{ social.rss | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a>
+        {%- endif -%}
+     
+      </div>
+    </div>
+    <hr>

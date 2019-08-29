@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <span>
+        <img src="{{page.libro.copertina.url}}" alt="copertina di {{page.libro.titolo}}">
+        <p>
+        {{page.libro.copertina.didascalia}} di {{page.libro.copertina.autore}}
+        </p>
+        </span>
+      </div>
+      <div class="col-sm">
+        <span>
+            <span class="badge badge-pill badge-primary">{{page.libro.categoria}}</span>
+            <h4>{{page.libro.titolo}}</h4>
+            <h6>di {{page.libro.autore}}</h6>
+
+
+            
+            <p>
+              <a href="{{page.libro.stampa.buy_url}}" class="badge badge-danger">brossura {{page.libro.stampa.prezzo}}  {{page.libro.stampa.valuta}}</a>
+              <a href="{{page.libro.epub.buy_url}}" class="badge badge-danger">epub {{page.libro.epub.prezzo}}  {{page.libro.epub.valuta}}</a>
+              <a href="{{page.libro.pdf.buy_url}}" class="badge badge-danger">pdf {{page.libro.pdf.prezzo}}  {{page.libro.pdf.valuta}}</a>
+            </p>
+            <p>data di pubblicazione: {{page.libro.pubblicazione}} </br>
+            isbn: {{page.libro.isbn}}</p>
+         
+            {{page.libro.estratto}}
+            <div class="px-4">
+                <img src="{{page.libro.foto_autore.url}}" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 150px;">
+                <div class="pt-4 text-center">
+                 
+                    <small class="h6 text-muted">{{page.libro.autore}} foto di {{page.libro.foto_autore.autore}}</small>
+           
+
+                </div>
+              </div>
+        </span>
+        <a href="{{page.libro.blog.url}}" >{{page.libro.blog.didascalia}}</a>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+          <span>
+              <h6>Recensione a cura di {{page.author}}</h6>
+              {{ content }}
+          </span>
+        </div>
+
+    </div>
+  
+  
+
+</div>

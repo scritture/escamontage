@@ -1,0 +1,62 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col one-half">
+       
+      </div>
+      <div class="container">
+      <div class="social-links">
+        {%- include social.html -%}
+      </div>
+      <div class="row align-items-center justify-content-md-between">
+          <div class="col-sm">
+            <div class="copyright">
+              &copy; 2019 <a href="/" target="_blank">{{site.author}}</a> 
+              <div>{{- site.description | escape -}} </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm">
+
+              <p class="nav nav-footer justify-content-end">
+               <div>  {{- site.indirizzo | escape -}}</div>      
+               <div>  {{- site.codicefiscale | escape -}}</div>
+               <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+              </p>
+                 
+            </div>
+          <div class="col-sm">
+            <ul class="nav nav-footer justify-content-end">
+              <li class="nav-item">
+                <a href="https://www.pedani.it" class="nav-link" target="_blank">pedani web factory</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about" class="nav-link" target="_blank">about Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="/license" class="nav-link" target="_blank">license</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  <!-- Core -->
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/assets/vendor/popper/popper.min.js"></script>
+  <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Argon JS -->
+  <script src="/assets/js/argon.js?v=1.1.0"></script>
+  <!-- pedani JS -->
+  <script src="/assets/js/pedani.js"></script>
