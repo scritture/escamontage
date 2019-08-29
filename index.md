@@ -20,10 +20,10 @@ libro:
   pagine:
   formato:
   blog:
-    url: "https://angeladonatelliescamontage.blogspot.com/2018/05/per-ordinare-le-copie-della-raccolta.html?spref=fb"
+    url: "/immagini/copertina-mi_vestivi_di_nero_velluto.jpg"
     didascalia: "Mi vestivi di nero velluto - Blog"
   copertina:
-    url: "http://escamontage.scritture.net/immagini/copertina-mi_vestivi_di_nero_velluto.jpg"
+    url: "/immagini/copertina-mi_vestivi_di_nero_velluto.jpg"
     didascalia: "In copertina Opera di "
     autore: "Angela Donatelli" 
   stampa:
