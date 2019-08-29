@@ -1,9 +1,9 @@
 .jumbotron {
     color: rgb(228, 206, 83);
     background-image: url("/immagini/home-sito-edizioni.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 90% 100%;
+    background-size: 50% 50%;
     height: 50vh;
 
   }
